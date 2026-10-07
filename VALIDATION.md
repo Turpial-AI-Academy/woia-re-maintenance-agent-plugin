@@ -1,29 +1,9 @@
-# Validation obligations
+# Validation
 
-The scaffold supplies generic package/release validation and regression fixtures. Add domain-specific tests and regressions.
+Profile: centralized thin shared-provider, Ecosystem v0.5.4. Required checks: bootstrap, doctor, own domain regression, ci:fast and official plugin:certify-thin after committing a clean candidate. Local release:check adds exact-candidate portable archive checks.
 
-Capability regressions should prove bounded amendments of healthy authoritative artifacts, deep-path escalation, preservation of unrelated valid artifacts/evidence, targeted invalidation/revalidation, and independent gate ownership. Assert semantic obligations or observable behavior rather than rigid prose sentences unless exact wording is the contract. Adapt these cases to the capability; do not embed provider-specific policy in generic package validation.
+Domain tests cover independent report/triage/approval/work/outcome/cost states, sourced immutable evidence, organization/action isolation, current policy/source windows, held/revoked authority, exact work approvals, idempotency/conflicting keys and expected-revision concurrency. Finance/contact actions are absent and undeclared effect fields denied. UNKNOWN completion is preserved.
 
-Report reusable durable execution/observation evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Independently inspect reused evidence and rerun affected checks plus mandatory invariants when changes invalidate it. This refinement does not reduce the formal gates below.
+No database transaction integration, external adapter, operator/business E2E, fresh global G6/G7 or Production Ready claim is made. Integrations must qualify atomic CAS persistence, referential integrity and source/authority resource resolution. Domain Contracts remains the permanent cross-domain scenario/schema home.
 
-Before first release:
-
-~~~text
-# after README.plugin.md -> README.md and placeholder replacement
-mise install
-mise run bootstrap
-# optional source diagnostic; not a release gate
-pnpm run checksums:generate
-mise run doctor
-mise run validate
-mise run test
-mise run ci:fast
-mise run ci:extended
-mise run jobs:local
-# commit candidate
-mise run release:check
-~~~
-
-Also run `skills-ref validate` for each skill when available.
-
-No placeholder token or scaffold-only `README.plugin.md` may remain in the release candidate.
+Inherited ci:extended and jobs:local scripts are dormant full-profile authoring templates, NOT_RUN for the current thin profile. They are not substitutes for centralized thin certification.

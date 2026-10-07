@@ -1,42 +1,13 @@
 # woia-re-maintenance
 
-Portable Agent Plugin for Scoped maintenance evidence, work orders and cost proposals without contact or financial dispatch..
+Agent Plugins 1.0.0 thin shared-provider v0.5.0 for maintenance case evidence, sourced diagnosis, quote links, exact approvals, work orders, physical outcomes and cost proposals.
 
-## Capability
+The executable reference is a pure append-only transition planner with exact organization/action/target grants, current Source Authority and policy references, revision checks and idempotency. It implements no remote contact, money posting, database or external vendor adapter. The integrating host must authenticate context, verify typed references and atomically persist CAS transitions.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+See [skill](skills/woia-re-maintenance/SKILL.md) and [contract](skills/woia-re-maintenance/references/contract.md). Property Management owns cases; Operations/Vendor Management provide scoped contributions; Finance accepts financial consequences; external contact routes through Communications/Customer Service.
 
-The plugin adapts to the repository it operates on without requiring the consumer to adopt WOIA's authoring toolchain.
+## Development and qualification
 
-## Portable package
+Use Node 24.21.0 / pnpm 11.19.0 through repository Mise. Run bootstrap, doctor, test and ci:fast. Commit the clean candidate and run Ecosystem v0.5.4 `mise run plugin:certify-thin --repo <path>`.
 
-~~~text
-plugin.json
-README.md
-CHANGELOG.md
-LICENSE
-skills/**
-# optional source diagnostic when retained by the repository
-CHECKSUMS.sha256
-~~~
-
-`CHECKSUMS.sha256` is optional source evidence, not a required portable/release artifact.
-
-Add `mcp.json` only if the capability genuinely requires MCP.
-
-## Consumer requirements
-
-Document only genuine capability/runtime requirements here. Do not list maintenance Node/pnpm/Mise/Docker unless the portable capability itself truly needs them.
-
-## Development
-
-~~~text
-mise install
-mise run bootstrap
-mise run doctor
-mise run ci:fast
-mise run ci:extended
-mise run release:check
-~~~
+The inherited full-profile container jobs are dormant for this thin provider and are not publication evidence. Local `release:check` remains an additional clean-candidate check. No release/admission or Operator E2E is implied by engineering certification.

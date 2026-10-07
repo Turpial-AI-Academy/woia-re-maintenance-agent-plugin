@@ -1,0 +1,18 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "name": "woia-re-maintenance",
+  "version": "0.5.0",
+  "origin": "native",
+  "authoring_profile": "thin",
+  "type": "shared-provider",
+  "consumers": ["asset-management", "vendor-management", "operations", "finance", "customer-service"],
+  "actions": ["maintenance-case.create", "maintenance-case.update", "maintenance.triage.record", "maintenance.quote.link", "maintenance.approval.record", "maintenance.work-order.record", "maintenance.outcome.record", "maintenance.cost-proposal.record"],
+  "semantic_contract": "woia-re-domain-contracts@v0.5.0",
+  "qualified_adapters": [],
+  "boundaries": {
+    "external_contact": "communications/customer-service-only",
+    "financial_consequences": "finance-acceptance-and-ledger-only",
+    "operator_e2e": "NOT_RUN",
+    "production_ready": false
+  }
+}
