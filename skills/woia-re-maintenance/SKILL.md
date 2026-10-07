@@ -1,55 +1,31 @@
 ---
 name: woia-re-maintenance
-description: Scoped maintenance evidence, work orders and cost proposals without contact or financial dispatch.
+description: Record sourced maintenance evidence, exact approvals, work orders and cost proposals while preserving Customer Service and Finance effect ownership.
 license: MIT
 ---
 
-# woia-re-maintenance
+# Real Estate Maintenance
 
-## Operating flow
-
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
-
-## Purpose
-
-Preserve distinct sourced maintenance reports, diagnosis, approval, work, outcome and financial proposal boundaries.
-
-## Minimum sufficient evidence
-
-Use a bounded path when an authoritative existing artifact/evidence set is healthy and the requested change is local and understood:
-
-1. identify the artifact/evidence, source candidate, and affected surface;
-2. load only supporting context and references needed for that surface;
-3. amend or re-evaluate the smallest coherent unit;
-4. verify affected behavior plus mandatory cross-cutting invariants;
-5. preserve unrelated valid artifacts/evidence and report what changed.
-
-Use the deep path for a new artifact, unclear scope or contradictory evidence, public API/event/schema changes, persisted data/migrations, authentication/authorization/secrets/signing/trust boundaries, deployment/rollback/availability risk, cross-provider dependency restructuring, unhealthy or unfamiliar conventions, missing durable required evidence, or a failed invariant that invalidates reused evidence. Load the references/checklists needed by those triggers and retain all required safety validation.
+Use DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT.
 
 ## Discover
 
-Inspect actual repository/system state before changing it. Locate authoritative artifacts/evidence and identify affected standards, constraints, supported platforms, integrations, and user requirements. Expand context when a dependency, uncertainty, or deep-path trigger requires it.
+Resolve organization, authenticated actor/Task and Property/Case scope before accessing evidence. Load [the maintenance contract](references/contract.md) for any mutation, authority, source conflict, work-order or cost question. Resolve canonical relations from published Domain Contracts rather than copying its master schemas.
 
 ## Decide
 
-Select the smallest strategy that satisfies the capability. Preserve healthy existing standards. Do not infer policy from the author's workspace.
+Maintain separate report, diagnosis, approval, authorized work, completion, acceptance, proposed cost and payment facts. Consumer eligibility grants no authority. Property Management owns the case/work order; Vendor Management contributes sourced quote links; Operations contributes physical outcome evidence. Customer Service alone contacts external vendors/tenants. Finance alone accepts/posts costs and payments.
 
 ## Implement
 
-Apply only authorized changes. Keep domain semantics independent from unrelated tooling.
+Use [the deterministic planner](scripts/maintenance.mjs) for the eight allowed actions and [command envelope](assets/command.schema.json) for structural preflight. Commands require immutable evidence/source references, stable operation keys and expected revisions. Trusted current context supplies exact org/case/action grants, policy revision/digest, Source Authority writer, holds/revocations and competent approval resources. Store the whole resulting append-only state atomically with CAS; never mutate old events. Replay only the identical operation. Do not treat caller-supplied context as authenticated proof.
+
+Work orders bind the approved exact payload and scope; overruns require a new competent decision. Record UNKNOWN outcomes honestly. Completion does not grant acceptance, liability or payment. Cost proposals require exact minor-unit money and outcome attribution, but create no financial effect.
 
 ## Validate
 
-Run capability-appropriate checks and verify changed state. Reuse evidence only when it is durable, inspectable evidence of actual execution/observation with an identifiable candidate, checked surface, relevant inputs/environment, and outcome. Independently establish that it satisfies the gate being owned; prose claims or recollection are not execution evidence.
-
-A later mutation invalidates the checks whose coverage or inputs it affects. Rerun those checks and mandatory related invariants; preserve unaffected valid evidence. Reuse expensive runtime verification across an unchanged candidate and relevant environment. A new turn/session alone does not invalidate evidence. Execute or observe relevant checks when required evidence cannot be inspected or established. Skipped/unavailable checks are not PASS.
+Run domain regressions and official centralized thin certification against the committed clean candidate. Real storage/adapters require separate qualification; no backend, database, vendor dispatch or Operator E2E is advertised as qualified here.
 
 ## Report
 
-Report current state, source candidate, affected surface, decisions, changes, and exact usage/maintenance commands. Distinguish reusable evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Include remaining risks and uncertainties.
-
-## Detailed references
-
-Add focused files under `references/` only when more detail is needed and give each reference a concrete scope/risk/ambiguity load trigger. Load triggered safety references; a bounded amendment does not require every reference or full template replay. Add scripts/assets only when they materially improve deterministic execution.
+Report source/map/policy revisions, current candidate identity, each distinct record and remaining unknowns/blockers. No Production Ready or fresh cross-domain E2E claim follows from local tests.
