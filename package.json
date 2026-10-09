@@ -1,7 +1,7 @@
 {
   "name": "woia-re-maintenance-agent-plugin-repo",
   "private": true,
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Repository maintenance tooling for the woia-re-maintenance portable Agent Plugin.",
   "type": "module",
   "engines": {

@@ -1,6 +1,6 @@
 # Maintenance provider contract
 
-Permanent semantic authority: published `woia-re-domain-contracts@v0.5.6`; this package does not copy or redefine the 85 relation catalog. The temporary coordination repository is not a runtime dependency; build provenance is retained only in external engineering evidence.
+Permanent semantic authority: published `woia-re-domain-contracts@v0.5.7`; this package does not copy or redefine the 85 relation catalog. The temporary coordination repository is not a runtime dependency; build provenance is retained only in external engineering evidence.
 
 Actions: maintenance-case.create/update; maintenance.triage.record; maintenance.quote.link; maintenance.approval.record; maintenance.work-order.record; maintenance.outcome.record; maintenance.cost-proposal.record.
 

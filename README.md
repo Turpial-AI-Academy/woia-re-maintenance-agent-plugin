@@ -1,6 +1,6 @@
 # woia-re-maintenance
 
-Agent Plugins 1.0.0 thin shared-provider v0.5.6 for maintenance case evidence, sourced diagnosis, quote links, exact approvals, work orders, physical outcomes and cost proposals.
+Agent Plugins 1.0.0 thin shared-provider v0.5.7 for maintenance case evidence, sourced diagnosis, quote links, exact approvals, work orders, physical outcomes and cost proposals.
 
 The executable reference is a pure append-only transition planner with exact organization/action/target grants, current Source Authority and policy references, revision checks and idempotency. It implements no remote contact, money posting, database or external vendor adapter. The integrating host must authenticate context, verify typed references and atomically persist CAS transitions.
 
@@ -8,6 +8,6 @@ See [skill](skills/woia-re-maintenance/SKILL.md) and [contract](skills/woia-re-m
 
 ## Development and qualification
 
-Use Node 24.21.0 / pnpm 11.19.0 through repository Mise. Run bootstrap, doctor, test and ci:fast. Commit the clean candidate and run Ecosystem v0.5.6 `mise run plugin:certify-thin --repo <path>`.
+Use Node 24.21.0 / pnpm 11.19.0 through repository Mise. Run bootstrap, doctor, test and ci:fast. Commit the clean candidate and run Ecosystem v0.5.7 `mise run plugin:certify-thin --repo <path>`.
 
 The inherited full-profile container jobs are dormant for this thin provider and are not publication evidence. Local `release:check` remains an additional clean-candidate check. No release/admission or Operator E2E is implied by engineering certification.
