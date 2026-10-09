@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "woia-re-maintenance",
-  "version": "0.5.0",
+  "version": "0.5.6",
   "description": "Scoped maintenance evidence, work orders and cost proposals without contact or financial dispatch.",
   "author": {
     "name": "Turpial AI Academy",
@@ -10,5 +10,8 @@
   "homepage": "https://github.com/Turpial-AI-Academy/woia-re-maintenance-agent-plugin",
   "repository": "https://github.com/Turpial-AI-Academy/woia-re-maintenance-agent-plugin",
   "license": "MIT",
-  "keywords": ["agent-plugin", "woia-re-maintenance"]
+  "keywords": [
+    "agent-plugin",
+    "woia-re-maintenance"
+  ]
 }

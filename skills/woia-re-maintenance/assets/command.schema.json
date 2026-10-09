@@ -3,15 +3,55 @@
   "title": "Maintenance command envelope; semantic validation by maintenance.mjs",
   "type": "object",
   "additionalProperties": false,
-  "required": ["action", "org_id", "case_id", "operation_key", "expected_revision", "evidence_ref", "source_ref", "payload"],
+  "required": [
+    "action",
+    "org_id",
+    "case_id",
+    "operation_key",
+    "expected_revision",
+    "evidence_ref",
+    "source_ref",
+    "payload"
+  ],
   "properties": {
-    "action": {"enum": ["maintenance-case.create", "maintenance-case.update", "maintenance.triage.record", "maintenance.quote.link", "maintenance.approval.record", "maintenance.work-order.record", "maintenance.outcome.record", "maintenance.cost-proposal.record"]},
-    "org_id": {"type": "string", "minLength": 1},
-    "case_id": {"type": "string", "minLength": 1},
-    "operation_key": {"type": "string", "minLength": 1},
-    "expected_revision": {"type": "integer", "minimum": 0},
-    "evidence_ref": {"type": "string", "minLength": 1},
-    "source_ref": {"type": "string", "minLength": 1},
-    "payload": {"type": "object"}
+    "action": {
+      "enum": [
+        "maintenance-case.create",
+        "maintenance-case.update",
+        "maintenance.triage.record",
+        "maintenance.quote.link",
+        "maintenance.approval.record",
+        "maintenance.work-order.record",
+        "maintenance.outcome.record",
+        "maintenance.cost-proposal.record"
+      ]
+    },
+    "org_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operation_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "evidence_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    }
   }
 }
